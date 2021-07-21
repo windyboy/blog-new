@@ -196,13 +196,14 @@ NOTIFY_TYPE=telegram
 NOTIFY_TELEGRAM_TOKEN=12345678:xy778Iltzsdr45tg
 ```
 * 使用Telegram的应用，创建一个私有的Channel， 并把新创建的机器人加为Channel管理员
-* 使用 [Telegram 网页] 查询channel的编号
-    * 打开网页以后，点击刚才创建的 channel
-    * 在地址栏出现 https://web.telegram.org/#/im?p=c**1055587116**_11052224402541910257
-    * 这里 1055587116 为编号，在前面加 **-100** 成为频道编号 **-1001055587116**
+* 使用getUpdates的api获取channel的id
+    * 访问API，https://api.telegram.org/botXXX:YYYY/getUpdates
+    * 其中 XXX:YYYY 是前面生成的token 12345678:xy778Iltzsdr45tg
+    * 如果能正确返回json，检查chat.id就是需要查询的id
+    * 直接把id填写入NOTIFY_TELEGRAM_CHAN
     ```
     $ sudo vim /etc/remark42/remark42.conf
-    NOTIFY_TELEGRAM_CHAN=-1001055587116
+    NOTIFY_TELEGRAM_CHAN=1055587116
     ```
 
 全部配置完后，重启remark42的服务
