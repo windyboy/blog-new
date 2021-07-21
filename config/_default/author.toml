@@ -1,0 +1,6 @@
+name = "糖醋小排"
+# avatar = "images/profile.png" # Avatar image. Default to "images/profile.webp".
+bio = "编程 自行车 玩"
+company = "Null"
+location = "广州"
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
