@@ -215,6 +215,7 @@ sudo systemctl restart remark42
 * [hugo comments] https://gohugo.io/content-management/comments/
 * [remark42 official doc] https://github.com/umputun/remark42
 * [hugo comments with remark42] https://blog.lasall.dev/post/hugo-and-comments-with-remark42/
+* [get telegram channel id] https://www.reddit.com/r/Telegram/comments/8hpnje/q_how_to_get_channel_id_or_channelusername/
 
 
 [comments]: https://gohugo.io/content-management/comments/ "comments"
