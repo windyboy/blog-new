@@ -8,6 +8,8 @@ on:
 
 jobs:
   deploy:
+    env:
+      LANG: en_US.UTF-8
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +20,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.84.4'
+          hugo-version: 'latest'
           extended: true
 
       - name: Clean public directory
