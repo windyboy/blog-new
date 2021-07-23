@@ -27,6 +27,7 @@ clone:
 ### 证书不信任
 
 1. 首先把登陆drone的用户设置成admin
+   
 在drone server启动的环境变量中设置
 ```
 DRONE_USER_CREATE=username:yourgitloginname,admin:true
@@ -34,7 +35,7 @@ DRONE_USER_CREATE=username:yourgitloginname,admin:true
 
 2. 把项目设置为信任项目
 
-![trust project](/static/trust.png)
+![trust project](/images/trust.png)
 
 3. 把主机的证书目录挂载到执行环境中
 
