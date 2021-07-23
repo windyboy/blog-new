@@ -34,9 +34,9 @@ DRONE_USER_CREATE=username:yourgitloginname,admin:true
 
 2. 把项目设置为信任项目
 
-![trust project](/static/trust.png)
+![trust project](/images/trust.png)
 
-3. 把主机的证书目录挂载到执行环境中
+1. 把主机的证书目录挂载到执行环境中
 
 ```
 - name: release-publish
